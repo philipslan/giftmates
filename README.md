@@ -1,1 +1,1 @@
-# giftmates
+# Giftmates: Give and split food
