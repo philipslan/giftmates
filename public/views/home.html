@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="alert alert-danger" role="alert" ng-if="attempt">
+    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+    <span class="sr-only">Error:</span>
+    Login Failed. Please try again.
+  </div>
+  <div ng-class="{error:attempt}" class="login-panel col-md-4 col-md-offset-4">
+    <h2>ASG Calendar</h2>
+    <span class="glyphicon glyphicon-calendar"></span>
+    <h2>Login</h2>
+
+    <form novalidate>
+      <input ng-model="loginData.username" type="text" placeholder="username">
+      <input ng-model="loginData.password" type="password" placeholder="password">
+      <button type="submit" ng-click="login()" class="btn btn-default full-width"><span class="glyphicon glyphicon-ok"></span></a></button>
+    </form>
+    <!-- <a href="/register">Register</a> -->
+  </div>
+</div>
